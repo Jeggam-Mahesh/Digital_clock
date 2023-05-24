@@ -39,6 +39,7 @@ div{
    gap: 10px;
 
 } 
+
 .setalarm{
     background-image: linear-gradient(to right, #8E53F0,#F25CFE);
     color: white;
@@ -46,6 +47,9 @@ div{
     width:200px;
     height: 20px;
     padding:10px;
+}
+.setalarm:hover{
+    background-image: linear-gradient(to right,#F25CFE , #8E53F0);
 }
 .all_timings{
   
@@ -69,6 +73,8 @@ ul{
     display: flex;
     justify-content: space-around;
     gap:10px;
+    /* position:absolute; */
+    z-index: 9;
 }
 .box{
  padding: 5px; 
@@ -91,13 +97,38 @@ ul{
     color: white;
     height:37px;
 }
+.tbox{
+    height:50px;
+width: 350px;
+    opacity:0.71;
+    background-color:azure;
+    position: absolute;
+    z-index: 5;
+    top: 45px;
+    left: 714px;
+    
+}
+.tbox2{
+    height:50px;
+    width: 310px;
+    opacity:0.22;
+    background-color:#FC5EFF;
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 735px;
+    
+    
+}
+
 .grab{
     /* height: 50px; */
-    padding:10px;
+    margin-top: 20px;
+    padding:20px;
     font-size:20px;
     font-weight: bolder;
     color: #8E53F0;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.89);
 }
 .image1{
 background-color: white;
@@ -106,6 +137,5 @@ background-size:contain;
 background-position: center;
 background-repeat: no-repeat;
 height:220px;
-width: 350px;
     
 }
