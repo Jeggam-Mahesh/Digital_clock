@@ -1,0 +1,111 @@
+body{
+   
+}
+div{
+    border-radius: 5px;
+}
+.maincontainer{
+    display:flex;
+    background-color:rgba(61, 8, 123, 1);
+    justify-content:center;
+    gap:20px;
+    padding: 10px;
+    /* height: 100vh; */
+}
+.container1{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+  
+}
+ select{
+    margin-left: 100px;
+}
+.timecard{
+    padding: 10px;
+    background-color: white;
+    line-height: 40px;
+}
+.g_morning{
+    padding:10px;
+    font-size:20px;
+    font-weight: bolder;
+   background-color: #9140B5; 
+   color: white;
+   
+}
+.parent{
+    display:flex;
+   gap: 10px;
+
+} 
+.setalarm{
+    background-image: linear-gradient(to right, #8E53F0,#F25CFE);
+    color: white;
+    text-align: center;
+    width:200px;
+    height: 20px;
+    padding:10px;
+}
+.all_timings{
+  
+    background-color: #9140B5; 
+    color: #FC5EFF;
+}
+ul{
+    list-style-type: none;
+    margin-right: 20px;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: center;
+}
+.time{
+    align-items: center;
+    padding:10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    gap:10px;
+}
+.box{
+ padding: 5px; 
+ text-align: center;  
+}
+.b1 {
+    color: #8A11BF;
+    background-image:url("./timeline.svg");
+}
+.b2 {
+    color: #8A11BF;
+    background-image:url("./timeline.svg");
+}
+.b3 {
+    color: #8A11BF;
+    background-image:url("./timeline.svg");
+}
+.b4{
+    background-image: url("./AM_svg.svg");
+    color: white;
+    height:37px;
+}
+.grab{
+    /* height: 50px; */
+    padding:10px;
+    font-size:20px;
+    font-weight: bolder;
+    color: #8E53F0;
+    background-color: white;
+}
+.image1{
+background-color: white;
+background-image: url("./Component\ 30\ –\ 1.svg");
+background-size:contain;
+background-position: center;
+background-repeat: no-repeat;
+height:220px;
+width: 350px;
+    
+}
