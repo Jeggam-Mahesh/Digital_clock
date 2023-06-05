@@ -6,8 +6,9 @@ div{
 }
 .maincontainer{
     display:flex;
+    flex-wrap: wrap;
     background-color:rgba(61, 8, 123, 1);
-    justify-content:center;
+     justify-content:center; 
     gap:20px;
     padding: 10px;
     /* height: 100vh; */
@@ -18,9 +19,10 @@ div{
     gap:20px;
   
 }
- select{
+
+ select{ 
     margin-left: 100px;
-}
+} 
 .timecard{
     padding: 10px;
     background-color: white;
@@ -68,7 +70,7 @@ ul{
 }
 .time{
     align-items: center;
-    padding:10px;
+    padding:13px;
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -76,9 +78,15 @@ ul{
     /* position:absolute; */
     z-index: 9;
 }
+.cbox{
+    width: 400px;
+}
 .box{
  padding: 5px; 
- text-align: center;  
+ text-align: center;
+ height: 35px;
+ width: 35px;  
+ font-weight:bolder ;
 }
 .b1 {
     color: #8A11BF;
@@ -95,36 +103,44 @@ ul{
 .b4{
     background-image: url("./AM_svg.svg");
     color: white;
-    height:37px;
+    font-size: x-larger;
+
 }
 .tbox{
     height:50px;
-width: 350px;
+    
+ width: 360px;
     opacity:0.71;
     background-color:azure;
-    position: absolute;
     z-index: 5;
+    position:absolute;
     top: 45px;
-    left: 714px;
+    left: 670px;
     
 }
 .tbox2{
     height:50px;
-    width: 310px;
+    width: 340px;
+   
     opacity:0.22;
     background-color:#FC5EFF;
-    position: absolute;
-    z-index: 5;
+    z-index: 4;
+    position:absolute;
     top: 50px;
-    left: 735px;
+    left: 680px;
     
     
 }
+/* table{
+    border: 2px solid black;
+    
+} */
 
 .grab{
-    /* height: 50px; */
+   /* width: 400px; */
     margin-top: 20px;
     padding:20px;
+    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-size:20px;
     font-weight: bolder;
     color: #8E53F0;
@@ -137,5 +153,53 @@ background-size:contain;
 background-position: center;
 background-repeat: no-repeat;
 height:220px;
-    
+   padding: 20px; 
+}
+.lunch_img{
+    background-color: white;
+background-image: url("./Component\ 31\ –\ 1.svg");
+background-size:contain;
+background-position: center;
+background-repeat: no-repeat;
+height:220px;
+   padding: 20px; 
+}
+.nap_img{
+    background-color: white;
+background-image: url("./lunch_image.png");
+background-size:contain;
+background-position: center;
+background-repeat: no-repeat;
+height:220px;
+   padding: 20px; 
+}
+.night_img{
+    background-color: white;
+background-image: url("./goodnight_image.svg");
+background-size:contain;
+background-position: center;
+background-repeat: no-repeat;
+height:220px;
+   padding: 20px; 
+}
+@media screen and (max-width:500px) {
+    select{ 
+        margin-left: 0px;
+    } 
+    .tbox{
+        width: 312px;
+        position: absolute;
+        top: 733px;
+        left: 29px;
+        
+    }
+    .tbox2{
+         width: 290px;
+         position: absolute;
+         top: 737px;
+         left: 41px;
+    }
+    .cbox{
+        width:auto;
+    }
 }
