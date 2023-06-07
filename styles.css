@@ -24,7 +24,7 @@ div{
 } 
 .timecard{
     padding: 10px;
-    background-color: white;
+    background-color:white;
     /* line-height: 40px; */
 }
 .g_morning{
@@ -68,6 +68,7 @@ ul{
     align-content: center;
 }
 .time{
+   
     align-items: center;
     padding:13px;
     background-color: white;

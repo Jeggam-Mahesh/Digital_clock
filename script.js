@@ -9,9 +9,10 @@ let displaytime=document.querySelector('span')
         if(hour>=12){
        ampm="PM"
         }
+        let thrs=hour;
         if(hour>12)
-        hour=hour%12
-        document.querySelector('.b1').innerHTML=`${hour}\n hours`
+        thrs=hour%12
+        document.querySelector('.b1').innerHTML=`${thrs}\n hours`
         document.querySelector('.b2').innerHTML=`${min}\n min`
         document.querySelector('.b3').innerHTML=`${sec}\n secs`
         document.querySelector('.b4').innerHTML=`${ampm}`
