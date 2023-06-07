@@ -9,25 +9,20 @@ let displaytime=document.querySelector('span')
         if(hour>=12){
        ampm="PM"
         }
-        document.querySelector('.b1').innerHTML=`${hour%12}\n hours`
+        if(hour>12)
+        hour=hour%12
+        document.querySelector('.b1').innerHTML=`${hour}\n hours`
         document.querySelector('.b2').innerHTML=`${min}\n min`
         document.querySelector('.b3').innerHTML=`${sec}\n secs`
         document.querySelector('.b4').innerHTML=`${ampm}`
           if(hour>=12&& hour<=15){
         document.querySelector('.grab').innerHTML="LUNCH HOUR IS THE BEST HOUR OF THE DAY"
-        let temp=document.querySelector('.image1');
-       
-         temp.setAttribute('class','lunch_img');
         }
         else if(hour>=16&&hour<=18){
              document.querySelector('.grab').innerHTML="STOP YAWNING GET SOME TEA ITS JUST EVENING"
-             let temp=document.querySelector('.image1');
-             temp.setAttribute('class','nap_img');
         }
         else if(hour>=20&&hour<=23){
             document.querySelector('.grab').innerHTML="CLOSE YOUR EYES AND GO TO SLEEP"
-            let temp=document.querySelector('.image1');
-            temp.setAttribute('class','night_img');
         }
     //    if(hour>=12){
 
@@ -41,6 +36,7 @@ let morningtime=document.getElementById("wakeup")
 let lunchtime=document.getElementById("lunch")
 let eveningtime=document.getElementById("nap")
 let naptime=document.getElementById("night")
+let temp=document.querySelector('.image1');
 function checkalarm(){
     let time1=new Date()
     let hrs=time1.getHours()
@@ -51,14 +47,18 @@ function checkalarm(){
 
     if(parseInt(morningtime.value)===hrs){
         document.querySelector('.g_morning').innerHTML="good morning"
+        temp.setAttribute('class','image1');
     }
     else if(parseInt(lunchtime.value)===hrs){
         document.querySelector('.g_morning').innerHTML="Good Afternoon!! Take Some Sleep"
+        temp.setAttribute('class','lunch_img');
     }
     else if(parseInt(eveningtime.value)===hrs){
         document.querySelector('.g_morning').innerHTML="Good Evening!!"
+        temp.setAttribute('class','nap_img');
     }
     else if(parseInt(naptime.value)===hrs){
          document.querySelector('.g_morning').innerHTML="good night"
+         temp.setAttribute('class','night_img');
     }
 }

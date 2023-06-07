@@ -1,6 +1,4 @@
-body{
-   
-}
+
 div{
     border-radius: 5px;
 }
@@ -21,12 +19,13 @@ div{
 }
 
  select{ 
-    margin-left: 100px;
+    padding: 5px;
+    margin-left: 200px;
 } 
 .timecard{
     padding: 10px;
     background-color: white;
-    line-height: 40px;
+    /* line-height: 40px; */
 }
 .g_morning{
     padding:10px;
@@ -184,19 +183,19 @@ height:220px;
 }
 @media screen and (max-width:500px) {
     select{ 
-        margin-left: 0px;
+        margin-left: 30px;
     } 
     .tbox{
         width: 312px;
         position: absolute;
-        top: 733px;
+        top: 640px;
         left: 29px;
         
     }
     .tbox2{
          width: 290px;
          position: absolute;
-         top: 737px;
+         top: 645px;
          left: 41px;
     }
     .cbox{
