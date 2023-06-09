@@ -17,10 +17,13 @@ div{
     gap:20px;
   
 }
-
+label{
+    margin-left:20px ;
+}
  select{ 
     padding: 5px;
-    margin-left: 200px;
+    width: 200px;
+    margin-left: 100px;
 } 
 .timecard{
     padding: 10px;
@@ -51,7 +54,7 @@ div{
 }
 .setalarm:hover{
     background-image: linear-gradient(to right,#F25CFE , #8E53F0);
-    
+    content: "hello";
 }
 .all_timings{
   
@@ -110,13 +113,15 @@ ul{
 .tbox{
     height:50px;
     
- width: 360px;
+ width: 380px;
     opacity:0.71;
     background-color:azure;
     z-index: 5;
-    position:absolute;
+    margin-top: -60px;
+    margin-left: 25px;
+    /* position:absolute;
     top: 45px;
-    left: 670px;
+    left: 670px; */
     
 }
 .tbox2{
@@ -126,9 +131,11 @@ ul{
     opacity:0.22;
     background-color:#FC5EFF;
     z-index: 4;
-    position:absolute;
+    margin-top: -60px;
+    margin-left: 38px;
+    /* position:absolute;
     top: 50px;
-    left: 680px;
+    left: 680px; */
     
     
 }
@@ -189,16 +196,18 @@ height:220px;
     } 
     .tbox{
         width: 312px;
-        position: absolute;
+        margin-left: 18px;
+        /* position: absolute;
         top: 640px;
-        left: 29px;
+        left: 29px; */
         
     }
     .tbox2{
          width: 290px;
-         position: absolute;
+         margin-left:22px ;
+         /* position: absolute;
          top: 645px;
-         left: 41px;
+         left: 41px; */
     }
     .cbox{
         width:auto;
