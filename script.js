@@ -38,6 +38,12 @@ let lunchtime=document.getElementById("lunch")
 let eveningtime=document.getElementById("nap")
 let naptime=document.getElementById("night")
 let temp=document.querySelector('.image1');
+function changetext(){
+    document.querySelector('.setalarm').innerHTML="Part time!!"
+}
+function change(){
+    document.querySelector('.setalarm').innerHTML="Set Alarm"
+}
 function checkalarm(){
     let time1=new Date()
     let hrs=time1.getHours()

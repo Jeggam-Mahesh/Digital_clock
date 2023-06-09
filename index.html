@@ -21,7 +21,7 @@
                         <td> <label for="wakeup">Select wake up time</label></td>
                         <td>  <select name="wake up" id="wakeup">
                             <option value="10">10 AM- 11 AM</option>
-                            <option value="24">12 AM - 1 AM</option>
+                            <option value="0">12 AM - 1 AM</option>
                             <option value="1">1 AM - 2 AM</option>
                             <option value="2">2 AM - 3 AM</option>
                             <option value="3">3 AM - 4 AM</option>
@@ -52,7 +52,7 @@
                         <td> <label for="lunch">Select lunch time</label></td>
                         <td> <select name="wake up" id="lunch">
                             <option value="10">10 AM - 11 AM</option>
-                            <option value="24">12 AM - 1 AM</option>
+                            <option value="0">12 AM - 1 AM</option>
                             <option value="1">1 AM - 2 AM</option>
                             <option value="2">2 AM - 3 AM</option>
                             <option value="3">3 AM - 4 AM</option>
@@ -85,7 +85,7 @@
                         <td> <label for="nap">Select nap time </label></td>
                         <td> <select name="nap" id="nap">
                             <option value="10">10 AM - 11 AM</option>
-                            <option value="24">12 AM - 1 AM</option>
+                            <option value="0">12 AM - 1 AM</option>
                             <option value="1">1 AM - 2 AM</option>
                             <option value="2">2 AM - 3 AM</option>
                             <option value="3">3 AM - 4 AM</option>
@@ -118,7 +118,7 @@
                         <td> <label for="night">Select night time     </label></td>
                         <td> <select name="wake up" id="night">
                             <option value="10">10 AM - 11 AM</option>
-                            <option value="24">12 AM - 1 AM</option>
+                            <option value="0">12 AM - 1 AM</option>
                             <option value="1">1 AM - 2 AM</option>
                             <option value="2">2 AM - 3 AM</option>
                             <option value="3">3 AM - 4 AM</option>
@@ -172,7 +172,7 @@
             GOOD MORNING!! WAKE UP !!
            </div>
            <div class="parent">
-            <div class="setalarm" onclick="checkalarm()">Set Alarm </div>
+            <div class="setalarm" onclick="checkalarm()" onmouseenter="changetext()" onmouseleave="change()">Set Alarm </div>
             <div class="all_timings">
                 <ul>
                     <li>Wake Up Time : 10AM - 11AM </li>
@@ -182,7 +182,7 @@
                 </ul>
             </div>
            </div>
-          
+            
         </div>
         <div class="container2">
             <div class="time cbox">
