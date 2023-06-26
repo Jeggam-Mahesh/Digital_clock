@@ -1,4 +1,6 @@
-
+body{
+    background-color:rgba(61, 8, 123, 1);
+}
 div{
     border-radius: 5px;
 }
@@ -6,9 +8,9 @@ div{
     display:flex;
     flex-wrap: wrap;
     background-color:rgba(61, 8, 123, 1);
-     justify-content:center; 
-    gap:20px;
-    padding: 10px;
+     justify-content:space-around; 
+    gap:100px;
+    padding: 5px;
     /* height: 100vh; */
 }
 .container1{

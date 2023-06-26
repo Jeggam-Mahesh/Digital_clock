@@ -1,11 +1,12 @@
 let displaytime=document.querySelector('span')
 //displaytime.addEventListener("click",()=>{
+    var ampm="AM"
     function clock(){
         let time=new Date()
         let hour=time.getHours();
         let min=time.getMinutes()
         let sec=time.getSeconds()
-        let ampm="AM"
+        
         if(hour>=12){
        ampm="PM"
         }
@@ -19,15 +20,13 @@ let displaytime=document.querySelector('span')
           if(hour>=12&& hour<=15){
         document.querySelector('.grab').innerHTML="LUNCH HOUR IS THE BEST HOUR OF THE DAY"
         }
-        else if(hour>=16&&hour<=18){
+        else if(hour>=16&&hour<=19){
              document.querySelector('.grab').innerHTML="STOP YAWNING GET SOME TEA ITS JUST EVENING"
         }
         else if(hour>=20&&hour<=23){
             document.querySelector('.grab').innerHTML="CLOSE YOUR EYES AND GO TO SLEEP"
         }
-    //    if(hour>=12){
-
-    //    }
+    
     }
     setInterval(()=>{
         clock();
@@ -47,10 +46,10 @@ function change(){
 function checkalarm(){
     let time1=new Date()
     let hrs=time1.getHours()
-    document.getElementsByTagName('li')[0].innerHTML=`Wake Up Time : ${parseInt(morningtime.value)%12}AM - ${parseInt(morningtime.value)%12+1}AM`
-    document.getElementsByTagName('li')[1].innerHTML=`Lunch Time : ${parseInt(lunchtime.value)%12}PM - ${parseInt(lunchtime.value)%12+1}PM`
-    document.getElementsByTagName('li')[2].innerHTML=`Nap Time : ${parseInt(eveningtime.value)%12}PM - ${parseInt(eveningtime.value)%12+1}PM`
-    document.getElementsByTagName('li')[3].innerHTML=`Night Time : ${parseInt(naptime.value)%12}PM - ${parseInt(naptime.value)%12+1}PM`
+    document.getElementsByTagName('li')[0].innerHTML=`Wake Up Time : ${parseInt(morningtime.value)%12}${ampm} - ${parseInt(morningtime.value)%12+1}${ampm}`
+    document.getElementsByTagName('li')[1].innerHTML=`Lunch Time : ${parseInt(lunchtime.value)%12}${ampm} - ${parseInt(lunchtime.value)%12+1}${ampm}`
+    document.getElementsByTagName('li')[2].innerHTML=`Nap Time : ${parseInt(eveningtime.value)%12}${ampm} - ${parseInt(eveningtime.value)%12+1}${ampm}`
+    document.getElementsByTagName('li')[3].innerHTML=`Night Time : ${parseInt(naptime.value)%12}${ampm} - ${parseInt(naptime.value)%12+1}${ampm}`
 
     if(parseInt(morningtime.value)===hrs){
         document.querySelector('.g_morning').innerHTML="good morning"
