@@ -8,8 +8,8 @@ div{
     display:flex;
     flex-wrap: wrap;
     background-color:rgba(61, 8, 123, 1);
-     justify-content:space-around; 
-    gap:100px;
+    justify-content:center; 
+    gap:20px;
     padding: 5px;
     /* height: 100vh; */
 }
@@ -148,7 +148,6 @@ ul{
 
 .grab{
    /* width: 400px; */
-    margin-top: 20px;
     padding:20px;
     /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
     font-size:20px;
